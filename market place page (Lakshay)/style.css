@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;700&family=Raleway:wght@300;900&display=swap');
+
+* {
+    top: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+    background-color: teal;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    font-family: "Montserrat";
+    width: 100%;
+    height: 100px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu li{
+  
+color:white;
+}
+
+.nav-branding {
+    font-size: 2rem;
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: burlywood;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.848);
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: #8fe46d;
+}
+
+
+/* nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    font-family: "Montserrat";
+} */
+
+
+/* nav .logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: burlywood;
+    cursor: pointer;
+} */
+
+
+/* nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    right: 100px;
+} */
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media(max-width:768px) {
+    .nav-branding {
+        color: burlywood;
+    }
+    .nav-branding:hover {
+        color: #b3f19b;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: 0%;
+        opacity: 0.8;
+        /* position: fixed; */
+    }
+    .d-block {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+body{
+
+   background: linear-gradient(135deg,hsla(234, 100%, 8%,0.75) ,hsla(208, 100%, 29%,0.65))
+   ,url("/images/illustration/1.jpg") no-repeat center center / cover;
+}
